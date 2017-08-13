@@ -30,14 +30,15 @@ class ViewController: UIViewController {
     
     @IBAction func tapSwitch(_ sender: UISwitch) {
         if sender.isOn {
-            self.bottomLabel1.setContentCompressionResistancePriority(751, for: .horizontal)
-            self.bottomLabel2.setContentCompressionResistancePriority(750, for: .horizontal)
+            setLabelContentCompressionResistancePriority(labe1Priority: 751, labe2Priority: 750)
         } else {
-            self.bottomLabel1.setContentCompressionResistancePriority(750, for: .horizontal)
-            self.bottomLabel2.setContentCompressionResistancePriority(751, for: .horizontal)
+            setLabelContentCompressionResistancePriority(labe1Priority: 750, labe2Priority: 751)
         }
-//        self.view.setNeedsLayout()
-//        self.view.layoutIfNeeded()
+    }
+    
+    func setLabelContentCompressionResistancePriority (labe1Priority: UILayoutPriority, labe2Priority: UILayoutPriority) {
+        self.bottomLabel1.setContentCompressionResistancePriority(labe1Priority, for: .horizontal)
+        self.bottomLabel2.setContentCompressionResistancePriority(labe2Priority, for: .horizontal)
     }
     
     func createText(count: Int) -> String {
