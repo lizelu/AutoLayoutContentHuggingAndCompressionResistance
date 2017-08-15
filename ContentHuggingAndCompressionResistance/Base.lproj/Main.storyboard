@@ -34,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="字字字字字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cS4-8q-SJ0">
-                                <rect key="frame" x="163" y="120" width="196" height="21"/>
+                                <rect key="frame" x="163" y="119" width="196" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="spb-6F-uuH"/>
                                 </constraints>
@@ -115,10 +115,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Dlb-jA-Mzz" firstAttribute="top" secondItem="kxn-Hz-v7d" secondAttribute="bottom" constant="24" id="3TH-1X-x87"/>
                             <constraint firstAttribute="trailing" secondItem="Dlb-jA-Mzz" secondAttribute="trailing" id="T2p-rg-qAy"/>
                             <constraint firstItem="kxn-Hz-v7d" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="U2t-kZ-DWc"/>
-                            <constraint firstItem="cS4-8q-SJ0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="gyj-je-tnx"/>
-                            <constraint firstItem="Dlb-jA-Mzz" firstAttribute="top" secondItem="cS4-8q-SJ0" secondAttribute="bottom" constant="24" id="h0g-T0-odv"/>
+                            <constraint firstItem="cS4-8q-SJ0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="99" id="gyj-je-tnx"/>
                             <constraint firstItem="Dlb-jA-Mzz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nDm-OH-Txp"/>
                             <constraint firstAttribute="trailing" secondItem="cS4-8q-SJ0" secondAttribute="trailing" constant="16" id="qj0-RD-V5t"/>
                             <constraint firstItem="kxn-Hz-v7d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="quX-Z0-FYe"/>
