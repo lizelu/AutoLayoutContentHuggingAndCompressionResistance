@@ -18,6 +18,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //设置 Content Hugging Priority
+        self.bottomLabel1.setContentHuggingPriority(250, for: .horizontal)
+        self.bottomLabel1.setContentHuggingPriority(250, for: .vertical)
+        
+        //设置Content Compression Resistance Priority
+        self.bottomLabel1.setContentCompressionResistancePriority(750, for: .horizontal)
+        self.bottomLabel1.setContentCompressionResistancePriority(750, for: .vertical)
+        
+        //获取相应的优先级
+        print(self.bottomLabel1.contentHuggingPriority(for: .horizontal))
+        print(self.bottomLabel1.contentCompressionResistancePriority(for: .vertical))
     }
 
     @IBAction func tapStep1(_ sender: UIStepper) {
